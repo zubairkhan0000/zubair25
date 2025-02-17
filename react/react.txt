@@ -1,0 +1,265 @@
+it is a library
+
+it is used to develop single page application
+
+it is a component based application
+    components are reuseable 
+
+react is decelrative
+
+note:- react will renders component on the web page 
+    without page reloading
+
+2013, facebook(meta), jorden walke
+
+react 19
+
+how to create react application
+-------------------------------
+1)CDN
+2)Node.js way
+    a)npm
+        used to install update delete packages in a js
+        packages will be installed golobally
+    npm install -g creact-react-app
+    creact-react-app project-name
+
+    npm creact vite@latest -->install latest version of react
+
+    b)npx
+        used to execute packages without installing it
+        no need of golobally while installing packages
+    npx create-react-app project-name
+
+folder stucture of react
+---------------------------
+node-modules folder:-
+    all the packages and third party library
+
+src folder:-
+    it is an main folder
+    it is used for creating components
+
+index.html file:-
+    it is a root file
+
+eslint(ecma script lint):-
+    used for debug purpose
+
+package.json file:-
+    it store all dependency and third party library
+
+    //babel
+    will convert advance concept of js to old version
+
+components in react
+--------------------
+
+components are basic building blocks in react
+components are re-useable 
+
+two-types
+---------
+1)class based component
+2)function based component/presentational component/dumb component
+
+class based component:-
+    it is a es6 class in js
+    it uses react life cycle
+    is a stateful component
+    uses render() method
+        will renders component on the web page
+    it uses constructor to store data and extends keyword
+
+class demo extends React.Component{
+    render(){
+        return <h1> iam class based component</h1>
+    }
+}
+export default demo;
+
+
+function based component:-
+    it is a js pure function
+    it does not use react life cycle
+    it does not take any rende() method
+    it is a stateless
+    after react 16.8 function based component becomes stateful component
+    because of hooks.
+    there is no constructor and extends in function based component
+
+import React from 'react'
+function demo1(){
+    reutrn(
+        <h1>function based class</h1>
+    )
+}
+export default demo1;
+
+import React from 'react'
+let demo1=() =>{
+    reutrn(
+        <h1>function based class</h1>
+    )
+}
+export default demo1;
+
+ways of creaatimg elements
+---------------------------
+
+html
+----
+
+<h1>hello world</h1>
+
+DOm in js
+----------
+
+let h1=document.createElement("h1)
+console.log(h1)
+h1.textContent="hello"
+
+React
+-----
+
+React.createElement("tag-name","null or {id: 'demo"}","content")
+
+eg:-
+React.createElement("h1","null","hello")
+
+eg:-
+React.createElement("div",{id:"demo"},React.createElement("span","null","hello")
+
+JSX(java-script XML)
+--------------------
+    it is used to react html in React
+    it is neitherstring nor null
+
+rules:-
+    all elements should en-closed
+
+
+props in react
+--------------
+
+props stand for properties
+used to send data from one compoenent to another compoenent
+props are uni-directional
+props are immutable(read-only)
+
+State in react
+--------------
+it used to store data in the component and update the data in the component
+
+it is mutable(we can read and write)
+
+Syntax:-
+import {useState} from 'react'
+
+let [state,setState]=useState(initial vlaue)
+
+state--> used to store initial vlaue
+setState--> used to update state value
+
+ways of using styles in react
+------------------------------
+1)inline css
+2)golobally css
+3)externl.css
+
+useRef hook in react
+--------------------
+-->ref stands for reference
+-->useRef uses real-dom
+-->useRef is having a object called current
+-->uses ref keyword
+-->useRef is used for the uncontrolled format
+
+Syntax:-
+import {useRef} form 'react'
+
+let identifier=useRef()
+
+note:-hooks were introduced in react 16.8
+      hooks works only in FBC
+
+List and keys in React
+-------------------------
+
+-->list is used to iterate array using map method
+-->Keys are used to track an element 
+-->using keys will understand which element is create updated and deleted
+
+advantages:-
+-->improves compoenent efficency
+-->improves optimization of the browser
+
+how to avoid props drilling
+---------------------------
+1)useContext hook
+2)HDC(higher order component)
+3)
+useContext hook in react(IMP)
+----------------------------
+-->used to send data from one component to multiple component without passing/using props
+-->it is used to avoid props drilling
+
+Syntax:-
+import React from create
+
+step1:create a useContext and export it
+
+export let/var/const identifier-name=React>createContext(initial-value)
+
+step2: use provider to pass the vlaue
+<identifier-name.provider>
+    <Child compoenet/>
+</identifier-name.provider>
+
+step3: use consumer to consume value given by provider
+
+<identifier-name.consumer>
+    {
+        cbf
+    }
+</identifier-name.consumer>
+
+useEffect hook in react
+-----------------------
+
+it used to preovide side effect for function based component
+in react we can tell to component to perform something after componenet renders
+
+advantage of used effect
+
+it is used fro updating a dom 
+it is used for timer
+it is used to fetch an api
+
+useEffect will avoid react life cycle in cbc.
+componetDigMount
+componentDigUpdate
+componentWillUnMount
+
+Syntax:-
+import {useEffect} from 'react'
+
+useEffect(cbf,dependency)
+
+dependency(3-ways)
+    1)no dependency-->will renders infinte
+    2)empty dependency-->component will render only once
+    3)dependency with value(state,props)-->only when the value changes
+
+Browser Routers in reract
+-------------------------
+
+it is a library
+it used to interact one compoenent to multiple component
+is a pre defined componenet used to wrap route
+is a pre defined componenet used for routing purpose
+browser router is a pre defined compoenent used to wrap routes 
+useNavigate() it is used to navigate component
+useParmes() hooks it is used to target pre defined variable
+<Link></Link> used for linking purpose
+<outlet></outlet> used for place holder

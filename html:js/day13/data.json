@@ -1,0 +1,17 @@
+[
+    {
+        "name":"abhi",
+        "id":1,
+        "designation": "developer"
+    },
+    {
+        "name":"ram",
+        "id":2,
+        "designation": "Scammer"
+    },
+    {
+        "name":"rahul",
+        "id":3,
+        "designation": "tester"
+    }
+]

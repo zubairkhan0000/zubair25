@@ -1,0 +1,7 @@
+-->it will be called immediately once function object is created
+-->Syntax:
+    (expression-function)();
+ex:
+    (function(){
+        console.log("hello)
+    })();

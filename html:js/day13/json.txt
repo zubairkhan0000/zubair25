@@ -1,0 +1,30 @@
+JSON(java-script-object-notation)
+---------------------------------
+
+-->it is a plain-text file used to store the data in the form of key and value pair
+   where all the keys should be enclosed in a double quote
+
+-->two methods 
+    1)stringify()
+    -->will convert object to json format
+
+    2)parse()
+    -->will convert json to object method
+
+how to create a json
+--------------------
+
+step 1:-create a .json file
+
+step 2:-create a data in the form of key value pair
+        and key should enclose with a double quotes
+        as a value we should  use undefined and function
+        data-type.
+
+        --.[{},{},{},....] (array of object)
+
+3-ways to fetch json
+--fetch()
+--AJAX
+--Axios
+

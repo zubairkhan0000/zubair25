@@ -1,0 +1,14 @@
+table{
+    border: 1px solid;
+    
+}
+
+th, td{
+    border: 1px solid;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+}

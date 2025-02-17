@@ -1,0 +1,22 @@
+DOM(document object model)
+--------------------------
+___________________________________________________________________
+     |        |        |     |           |          |         |
+    screen  history fetch  navigator   navigation  storage   DOM
+
+    it is an objecct
+    dom is an api provided by the window
+    having root element document
+    dom is having a life sppan until page reloads
+
+    it is used to create update/modify delete an element
+    and we can provide style by using the dom
+
+                              document
+                                  |
+_______________________________________________________________
+          |                                            |
+         head                                         body
+           |                                            |
+     ____________                                  _____________
+    |            |                                |             |

@@ -1,0 +1,25 @@
+modification or manipulation of dom
+-------------------------------------
+used to update/modifiy an dom
+
+//method
+-->createElement()
+
+two steps
+---------
+step 1:-
+    create an element using a createElement() method
+
+    eg:-
+        let a= doucument.createElement("h1")
+        console.log(a) //<h1> </h1>
+        a.textContent="hello world" //<h1>hello world</h1>
+
+step 2:-
+    append element to the parent element using
+    append/appendChild() method.
+
+    eg:-
+        doucument.body.appendChild(a)
+    
+
